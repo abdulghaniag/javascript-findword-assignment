@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+           let para = " Lorem ipsum dolor the  sit AMEET and the consectetur adipisicing elit. the Ipsam voluptas porro expedita the  and  debitis eos, recusandae the exercitationem dolore distinctio the provident consectetur and corporis minima harum the quae magnam fugit in officiis the and culpa. Consequatur."
+           let findword = "the" 
+           let counter = 0
+           flag = false
+           
+           for(let i=0; i<para.length ;i++){
+    
+            if(findword.toLowerCase() ==para.toLowerCase().slice(i,i+findword.length)){
+                   flag = true
+                   counter++
+               
+            }
+
+           }if(flag){
+            console.log(`${counter} Results`);
+           }else{
+            console.log("No match");
+            
+           }
+             
+                  
+            
+
+
+
+    </script>
+</html>
